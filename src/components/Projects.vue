@@ -43,7 +43,7 @@
             </p>
 
             <span class="inline-flex items-center gap-2 text-sm sm:text-base text-primary font-medium group-hover:gap-3 sm:group-hover:gap-4 transition-all">
-              {{ t('projects.viewProject') }}
+              {{ t('projects.view_project') }}
               <svg class="w-4 h-4 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
               </svg>

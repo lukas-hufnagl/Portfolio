@@ -7,14 +7,14 @@
     "description": "I build modern web applications with a focus on performance, design and user experience.",
     "cta": "View Projects",
     "contact": "Contact",
-    "aboutMe": "About me",
+    "about_me": "About me",
     "scroll": "Scroll",
     "swipe": "Swipe"
   },
   "projects": {
     "title": "Selected Projects",
     "subtitle": "A selection of my best work",
-    "viewProject": "View Project",
+    "view_project": "View Project",
     "items": {
       "ecommerce": {
         "title": "E-Commerce Platform",
@@ -72,14 +72,14 @@
     "subtitle": "Passion for code and design",
     "description": "With over 3 years of experience in web development, I combine technical expertise with creative design. I love turning complex problems into elegant solutions.",
     "skills": "Skills",
-    "downloadCV": "Download CV",
+    "download_cv": "Download CV",
     "interests": "Interests",
     "stats": {
       "years": "Years",
       "coffee": "Coffee",
       "skills": "Skills"
     },
-    "interestItems": {
+    "interest_items": {
       "gaming": "🎮 Gaming",
       "coding": "💻 Coding",
       "music": "🎵 Music",
@@ -87,14 +87,14 @@
       "travel": "✈️ Travel",
       "learning": "📚 Learning"
     },
-    "showMore": "Show more",
-    "showLess": "Show less"
+    "show_more": "Show more",
+    "show_less": "Show less"
   },
   "achievements": {
     "title": "Achievements",
-    "unlockedOf": "{unlocked} of {total} unlocked",
-    "notUnlocked": "Not unlocked yet",
-    "swipeHint": "Swipe to discover",
+    "unlocked_of": "{unlocked} of {total} unlocked",
+    "not_unlocked": "Not unlocked yet",
+    "swipe_hint": "Swipe to discover",
     "tip": "💡 Tip: Explore the page to unlock all achievements!",
     "items": {
       "theme_toggle": {
@@ -132,15 +132,15 @@
     "message": "Message",
     "send": "Send Message",
     "success": "Message sent!",
-    "orReachOut": "Or reach out directly",
-    "namePlaceholder": "Your name",
-    "emailPlaceholder": "your{'@'}email.com",
-    "messagePlaceholder": "Your message..."
+    "or_reach_out": "Or reach out directly",
+    "name_placeholder": "Your name",
+    "email_placeholder": "your{'@'}email.com",
+    "message_placeholder": "Your message..."
   },
   "footer": {
     "rights": "All rights reserved",
-    "madeWith": "Made with love",
-    "backToTop": "Back to top"
+    "made_with": "Made with love",
+    "back_to_top": "Back to top"
   },
   "nav": {
     "home": "Home",

@@ -1,8 +1,8 @@
 <template>
-  <section :id="compact ? undefined : 'timeline'" class="px-5 sm:px-6 lg:px-8 bg-gray-50 dark:bg-zinc-950" :class="compact ? 'py-0 bg-white dark:bg-black' : 'py-16 sm:py-28 lg:py-32'">
-    <div :class="compact ? 'max-w-none' : 'max-w-4xl mx-auto'">
-      <div class="text-center mb-10 sm:mb-16 lg:mb-20" :class="{ 'mb-8': compact }">
-        <h2 class="font-bold mb-3 sm:mb-4 text-black dark:text-white" :class="compact ? 'text-2xl' : 'text-2xl sm:text-4xl lg:text-5xl'" v-motion :initial="{ opacity: 0, y: 30 }" :visibleOnce="{ opacity: 1, y: 0 }">
+  <section id="timeline" class="py-16 sm:py-28 lg:py-32 px-5 sm:px-6 lg:px-8 bg-gray-50 dark:bg-zinc-950">
+    <div class="max-w-4xl mx-auto">
+      <div class="text-center mb-10 sm:mb-16 lg:mb-20">
+        <h2 class="text-2xl sm:text-4xl lg:text-5xl font-bold mb-3 sm:mb-4 text-black dark:text-white" v-motion :initial="{ opacity: 0, y: 30 }" :visibleOnce="{ opacity: 1, y: 0 }">
           {{ t('timeline.title') }}
         </h2>
         <p class="text-sm sm:text-lg text-gray-600 dark:text-gray-400" v-motion :initial="{ opacity: 0, y: 20 }" :visibleOnce="{ opacity: 1, y: 0, transition: { delay: 100 } }">
@@ -86,10 +86,6 @@
 <script setup lang="ts">
 import { useI18n } from 'vue-i18n'
 import { ref } from 'vue'
-
-defineProps<{
-  compact?: boolean
-}>()
 
 const { t } = useI18n()
 const expandedItem = ref<number | null>(null)

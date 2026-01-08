@@ -1,12 +1,12 @@
 <template>
-  <section :id="compact ? undefined : 'about'" class="px-5 sm:px-6 lg:px-8 bg-white dark:bg-black overflow-x-hidden" :class="compact ? 'py-0' : 'py-16 sm:py-28 lg:py-32'">
-    <div :class="compact ? 'max-w-none' : 'max-w-6xl mx-auto'">
-      <div class="text-center mb-10 sm:mb-16" :class="{ 'mb-8': compact }">
+  <section id="about" class="py-16 sm:py-28 lg:py-32 px-5 sm:px-6 lg:px-8 bg-white dark:bg-black overflow-x-hidden">
+    <div class="max-w-6xl mx-auto">
+      <div class="text-center mb-10 sm:mb-16">
         <!-- Profile Image -->
-        <div class="mb-6 sm:mb-8" :class="{ 'mb-4': compact }" v-motion :initial="{ opacity: 0, scale: 0.8 }" :visibleOnce="{ opacity: 1, scale: 1 }">
+        <div class="mb-6 sm:mb-8" v-motion :initial="{ opacity: 0, scale: 0.8 }" :visibleOnce="{ opacity: 1, scale: 1 }">
           <div class="relative inline-block">
             <div class="absolute -inset-1 bg-gradient-to-r from-primary via-accent to-emerald rounded-full blur-md opacity-60"></div>
-            <div class="rounded-full overflow-hidden border-4 border-white dark:border-zinc-900 shadow-2xl bg-gradient-to-br from-primary to-accent" :class="compact ? 'w-24 h-24' : 'relative w-32 h-32 sm:w-40 sm:h-40 lg:w-44 lg:h-44'">
+            <div class="relative w-32 h-32 sm:w-40 sm:h-40 lg:w-44 lg:h-44 rounded-full overflow-hidden border-4 border-white dark:border-zinc-900 shadow-2xl bg-gradient-to-br from-primary to-accent">
               <img 
                 src="/me.jpg" 
                 alt="Lukas Hufnagl" 
@@ -17,7 +17,7 @@
           </div>
         </div>
         
-        <h2 class="font-bold mb-3 sm:mb-4 text-black dark:text-white" :class="compact ? 'text-2xl' : 'text-2xl sm:text-4xl lg:text-5xl'" v-motion :initial="{ opacity: 0, y: 30 }" :visibleOnce="{ opacity: 1, y: 0 }">
+        <h2 class="text-2xl sm:text-4xl lg:text-5xl font-bold mb-3 sm:mb-4 text-black dark:text-white" v-motion :initial="{ opacity: 0, y: 30 }" :visibleOnce="{ opacity: 1, y: 0 }">
           {{ t('about.title') }}
         </h2>
         <p class="text-sm sm:text-lg text-gray-600 dark:text-gray-400" v-motion :initial="{ opacity: 0, y: 20 }" :visibleOnce="{ opacity: 1, y: 0, transition: { delay: 100 } }">
@@ -81,10 +81,10 @@
           </div>
 
           <a href="#" class="inline-flex items-center gap-2 sm:gap-3 px-5 sm:px-6 py-2.5 sm:py-3 bg-black dark:bg-white text-white dark:text-black rounded-full font-medium hover:scale-105 transition-transform text-sm sm:text-base">
-            <svg class="w-4 h-4 sm:w-5 sm:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
             </svg>
-            {{ t('about.downloadCV') }}
+            {{ t('about.download_cv') }}
           </a>
         </div>
 
@@ -148,10 +148,6 @@
 import { useI18n } from 'vue-i18n'
 import { ref, computed } from 'vue'
 
-defineProps<{
-  compact?: boolean
-}>()
-
 const { t } = useI18n()
 
 const activeStat = ref<number | null>(null)
@@ -188,12 +184,12 @@ const stats = computed(() => [
 ])
 
 const interests = computed(() => [
-  t('about.interestItems.gaming'),
-  t('about.interestItems.coding'),
-  t('about.interestItems.music'),
-  t('about.interestItems.fitness'),
-  t('about.interestItems.travel'),
-  t('about.interestItems.learning')
+  t('about.interest_items.gaming'),
+  t('about.interest_items.coding'),
+  t('about.interest_items.music'),
+  t('about.interest_items.fitness'),
+  t('about.interest_items.travel'),
+  t('about.interest_items.learning')
 ])
 
 const skills = [

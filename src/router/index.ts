@@ -10,7 +10,7 @@ const routes: Array<RouteRecordRaw> = [
 ]
 
 const router = createRouter({
-  history: createWebHistory('/'),
+  history: createWebHistory('/portfolio/'),
   routes,
   scrollBehavior(to) {
     if (to.hash) {

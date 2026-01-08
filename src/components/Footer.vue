@@ -24,10 +24,10 @@
         <div class="flex flex-col sm:flex-row items-center gap-2 sm:gap-4 text-xs sm:text-sm text-gray-500">
           <span>© {{ new Date().getFullYear() }} Lukas Hufnagl</span>
           <span class="hidden sm:inline">·</span>
-          <span>{{ t('footer.madeWith') }} 💙</span>
+          <span>{{ t('footer.made_with') }} 💙</span>
           <span class="hidden sm:inline">·</span>
           <button @click="scrollToTop" class="hover:text-primary transition-colors flex items-center gap-1 group">
-            {{ t('footer.backToTop') }}
+            {{ t('footer.back_to_top') }}
             <svg class="w-3.5 h-3.5 sm:w-4 sm:h-4 group-hover:-translate-y-0.5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"/>
             </svg>

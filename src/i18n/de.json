@@ -7,14 +7,14 @@
     "description": "Ich entwickle moderne Web-Applikationen mit Fokus auf Performance, Design und User Experience.",
     "cta": "Projekte ansehen",
     "contact": "Kontakt",
-    "aboutMe": "Mehr über mich",
+    "about_me": "Mehr über mich",
     "scroll": "Scroll",
     "swipe": "Swipe"
   },
   "projects": {
     "title": "Ausgewählte Projekte",
     "subtitle": "Eine Auswahl meiner besten Arbeiten",
-    "viewProject": "Projekt ansehen",
+    "view_project": "Projekt ansehen",
     "items": {
       "ecommerce": {
         "title": "E-Commerce Platform",
@@ -72,14 +72,14 @@
     "subtitle": "Leidenschaft für Code und Design",
     "description": "Mit über 3 Jahren Erfahrung in der Webentwicklung verbinde ich technische Expertise mit kreativem Design. Ich liebe es, komplexe Probleme in elegante Lösungen zu verwandeln.",
     "skills": "Skills",
-    "downloadCV": "CV herunterladen",
+    "download_cv": "CV herunterladen",
     "interests": "Interessen",
     "stats": {
       "years": "Jahre",
       "coffee": "Kaffee",
       "skills": "Skills"
     },
-    "interestItems": {
+    "interest_items": {
       "gaming": "🎮 Gaming",
       "coding": "💻 Coding",
       "music": "🎵 Musik",
@@ -87,14 +87,14 @@
       "travel": "✈️ Reisen",
       "learning": "📚 Lernen"
     },
-    "showMore": "Mehr anzeigen",
-    "showLess": "Weniger anzeigen"
+    "show_more": "Mehr anzeigen",
+    "show_less": "Weniger anzeigen"
   },
   "achievements": {
     "title": "Achievements",
-    "unlockedOf": "{unlocked} von {total} freigeschaltet",
-    "notUnlocked": "Noch nicht freigeschaltet",
-    "swipeHint": "Swipe zum Entdecken",
+    "unlocked_of": "{unlocked} von {total} freigeschaltet",
+    "not_unlocked": "Noch nicht freigeschaltet",
+    "swipe_hint": "Swipe zum Entdecken",
     "tip": "💡 Tipp: Erkunde die Seite um alle Achievements freizuschalten!",
     "items": {
       "theme_toggle": {
@@ -132,15 +132,15 @@
     "message": "Nachricht",
     "send": "Nachricht senden",
     "success": "Nachricht gesendet!",
-    "orReachOut": "Oder kontaktiere mich direkt",
-    "namePlaceholder": "Dein Name",
-    "emailPlaceholder": "deine{'@'}email.de",
-    "messagePlaceholder": "Deine Nachricht..."
+    "or_reach_out": "Oder kontaktiere mich direkt",
+    "name_placeholder": "Dein Name",
+    "email_placeholder": "deine{'@'}email.de",
+    "message_placeholder": "Deine Nachricht..."
   },
   "footer": {
     "rights": "Alle Rechte vorbehalten",
-    "madeWith": "Mit Liebe gebaut",
-    "backToTop": "Nach oben"
+    "made_with": "Mit Liebe gebaut",
+    "back_to_top": "Nach oben"
   },
   "nav": {
     "home": "Home",

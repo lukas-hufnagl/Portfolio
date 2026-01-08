@@ -22,7 +22,6 @@
           @keydown.enter="executeCommand"
           class="flex-1 bg-transparent outline-none text-green-400"
           placeholder="Enter command..."
-          autofocus
         />
       </div>
     </div>

@@ -1,36 +1,33 @@
 <template>
   <div class="relative z-10">
     <Hero />
-    
-    <!-- Combined About & Timeline Section for large screens -->
-    <section id="about-timeline" class="hidden 2xl:block py-16 px-6 bg-white dark:bg-black">
-      <div class="max-w-[1600px] mx-auto grid grid-cols-2 gap-16">
-        <!-- About Side -->
-        <div id="about">
-          <About :compact="true" />
-        </div>
-        <!-- Timeline Side -->
-        <div id="timeline">
-          <Timeline :compact="true" />
-        </div>
-      </div>
-    </section>
-    
-    <!-- Regular sections for smaller screens -->
-    <div class="2xl:hidden">
+    <Suspense>
       <About />
+      <template #fallback>
+        <div class="min-h-screen flex items-center justify-center">
+          <div class="animate-spin w-8 h-8 border-2 border-primary border-t-transparent rounded-full"></div>
+        </div>
+      </template>
+    </Suspense>
+    <Suspense>
       <Timeline />
-    </div>
-    
-    <Achievements />
-    <Contact />
+    </Suspense>
+    <Suspense>
+      <Achievements />
+    </Suspense>
+    <Suspense>
+      <Contact />
+    </Suspense>
   </div>
 </template>
 
 <script setup lang="ts">
+import { defineAsyncComponent } from 'vue'
 import Hero from '../components/Hero.vue'
-import About from '../components/About.vue'
-import Timeline from '../components/Timeline.vue'
-import Achievements from '../components/Achievements.vue'
-import Contact from '../components/Contact.vue'
+
+// Lazy load components that are below the fold
+const About = defineAsyncComponent(() => import('../components/About.vue'))
+const Timeline = defineAsyncComponent(() => import('../components/Timeline.vue'))
+const Achievements = defineAsyncComponent(() => import('../components/Achievements.vue'))
+const Contact = defineAsyncComponent(() => import('../components/Contact.vue'))
 </script>

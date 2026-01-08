@@ -6,7 +6,7 @@
           {{ t('achievements.title') }}
         </h2>
         <p class="text-sm sm:text-lg text-gray-600 dark:text-gray-400" v-motion :initial="{ opacity: 0, y: 20 }" :visibleOnce="{ opacity: 1, y: 0, transition: { delay: 100 } }">
-          {{ t('achievements.unlockedOf', { unlocked: unlockedCount(), total: totalCount() }) }}
+          {{ t('achievements.unlocked_of', { unlocked: unlockedCount(), total: totalCount() }) }}
         </p>
       </div>
 
@@ -37,7 +37,7 @@
               class="text-sm"
               :class="achievement.unlocked ? 'text-gray-600 dark:text-gray-400' : 'text-gray-400'"
             >
-              {{ achievement.unlocked ? achievement.description : t('achievements.notUnlocked') }}
+              {{ achievement.unlocked ? achievement.description : t('achievements.not_unlocked') }}
             </p>
           </div>
         </div>
@@ -74,7 +74,7 @@
                 class="text-sm"
                 :class="achievement.unlocked ? 'text-gray-600 dark:text-gray-400' : 'text-gray-400 dark:text-gray-600'"
               >
-                {{ achievement.unlocked ? achievement.description : t('achievements.notUnlocked') }}
+                {{ achievement.unlocked ? achievement.description : t('achievements.not_unlocked') }}
               </p>
             </div>
           </div>
@@ -86,7 +86,7 @@
         <svg class="w-4 h-4 animate-pulse" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16l-4-4m0 0l4-4m-4 4h18"/>
         </svg>
-        <span class="text-xs">{{ t('achievements.swipeHint') }}</span>
+        <span class="text-xs">{{ t('achievements.swipe_hint') }}</span>
         <svg class="w-4 h-4 animate-pulse" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
         </svg>
