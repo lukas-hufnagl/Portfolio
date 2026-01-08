@@ -1,0 +1,116 @@
+{
+  "hero": {
+    "greeting": "Hey, ich bin",
+    "name": "Lukas Hufnagl",
+    "title": "Full-Stack Entwickler",
+    "available": "Verfügbar für Projekte",
+    "description": "Ich entwickle moderne Web-Applikationen mit Fokus auf Performance, Design und User Experience.",
+    "cta": "Projekte ansehen",
+    "contact": "Kontakt"
+  },
+  "projects": {
+    "title": "Ausgewählte Projekte",
+    "subtitle": "Eine Auswahl meiner besten Arbeiten",
+    "viewProject": "Projekt ansehen",
+    "items": {
+      "ecommerce": {
+        "title": "E-Commerce Platform",
+        "description": "Moderne Shopping-Plattform mit Echtzeit-Inventar und nahtloser Checkout-Experience."
+      },
+      "dashboard": {
+        "title": "Analytics Dashboard",
+        "description": "Datenvisualisierung mit interaktiven Charts und Echtzeit-Updates."
+      },
+      "app": {
+        "title": "Mobile App",
+        "description": "Cross-Platform App mit nativem Look and Feel für iOS und Android."
+      },
+      "ai": {
+        "title": "AI Integration",
+        "description": "Machine Learning Integration für intelligente Automatisierung."
+      },
+      "cms": {
+        "title": "CMS System",
+        "description": "Flexibles Content-Management mit Drag-and-Drop Editor."
+      },
+      "api": {
+        "title": "REST API",
+        "description": "Skalierbare API-Architektur mit GraphQL Support."
+      }
+    }
+  },
+  "timeline": {
+    "title": "Mein Werdegang",
+    "subtitle": "Stationen meiner Karriere",
+    "present": "Heute",
+    "items": {
+      "abb": {
+        "period": "Jan 2025 - Heute",
+        "title": "Full Stack Developer",
+        "company": "ABB",
+        "description": "Entwicklung von Enterprise-Anwendungen und Automatisierungslösungen."
+      },
+      "aski": {
+        "period": "Jun 2023 - Dez 2024",
+        "title": "Full Stack Developer",
+        "company": "ASKI",
+        "description": "Entwicklung von Web-Applikationen mit Vue.js, .NET und Cloud-Technologien."
+      },
+      "htl": {
+        "period": "2017 - 2022",
+        "title": "Informationstechnologie",
+        "company": "HTL Wels",
+        "description": "Höhere technische Ausbildung mit Schwerpunkt auf Softwareentwicklung und IT-Systeme."
+      }
+    }
+  },
+  "about": {
+    "title": "Über mich",
+    "subtitle": "Leidenschaft für Code und Design",
+    "description": "Mit über 3 Jahren Erfahrung in der Webentwicklung verbinde ich technische Expertise mit kreativem Design. Ich liebe es, komplexe Probleme in elegante Lösungen zu verwandeln.",
+    "skills": "Skills",
+    "downloadCV": "CV herunterladen"
+  },
+  "contact": {
+    "title": "Kontakt",
+    "subtitle": "Lass uns zusammenarbeiten",
+    "description": "Hast du ein Projekt im Sinn? Ich freue mich von dir zu hören.",
+    "name": "Name",
+    "email": "E-Mail",
+    "message": "Nachricht",
+    "send": "Nachricht senden",
+    "success": "Nachricht gesendet!",
+    "orReachOut": "Oder kontaktiere mich direkt",
+    "namePlaceholder": "Dein Name",
+    "emailPlaceholder": "deine@email.de",
+    "messagePlaceholder": "Deine Nachricht..."
+  },
+  "footer": {
+    "rights": "Alle Rechte vorbehalten",
+    "madeWith": "Mit Liebe gebaut",
+    "backToTop": "Nach oben"
+  },
+  "nav": {
+    "home": "Home",
+    "projects": "Projekte",
+    "timeline": "Werdegang",
+    "about": "Über mich",
+    "contact": "Kontakt"
+  },
+  "tech": {
+    "title": "Tech Stack",
+    "subtitle": "Technologien, mit denen ich täglich arbeite"
+  },
+  "playground": {
+    "title": "Playground",
+    "subtitle": "Experimentiere mit interaktiven Code-Beispielen"
+  },
+  "settings": {
+    "accent": "Akzentfarbe",
+    "mood": "Design-Modus"
+  },
+  "skills": {
+    "title": "Meine Skills",
+    "subtitle": "Technologien & Tools mit denen ich arbeite"
+  }
+}

@@ -1,0 +1,116 @@
+{
+  "hero": {
+    "greeting": "Hey, I'm",
+    "name": "Lukas Hufnagl",
+    "title": "Full-Stack Developer",
+    "available": "Available for projects",
+    "description": "I build modern web applications with a focus on performance, design and user experience.",
+    "cta": "View Projects",
+    "contact": "Contact"
+  },
+  "projects": {
+    "title": "Selected Projects",
+    "subtitle": "A selection of my best work",
+    "viewProject": "View Project",
+    "items": {
+      "ecommerce": {
+        "title": "E-Commerce Platform",
+        "description": "Modern shopping platform with real-time inventory and seamless checkout experience."
+      },
+      "dashboard": {
+        "title": "Analytics Dashboard",
+        "description": "Data visualization with interactive charts and real-time updates."
+      },
+      "app": {
+        "title": "Mobile App",
+        "description": "Cross-platform app with native look and feel for iOS and Android."
+      },
+      "ai": {
+        "title": "AI Integration",
+        "description": "Machine learning integration for intelligent automation."
+      },
+      "cms": {
+        "title": "CMS System",
+        "description": "Flexible content management with drag-and-drop editor."
+      },
+      "api": {
+        "title": "REST API",
+        "description": "Scalable API architecture with GraphQL support."
+      }
+    }
+  },
+  "timeline": {
+    "title": "My Journey",
+    "subtitle": "Career milestones",
+    "present": "Present",
+    "items": {
+      "abb": {
+        "period": "Jan 2025 - Present",
+        "title": "Full Stack Developer",
+        "company": "ABB",
+        "description": "Developing enterprise applications and automation solutions."
+      },
+      "aski": {
+        "period": "Jun 2023 - Dec 2024",
+        "title": "Full Stack Developer",
+        "company": "ASKI",
+        "description": "Building web applications with Vue.js, .NET and cloud technologies."
+      },
+      "htl": {
+        "period": "2017 - 2022",
+        "title": "Information Technology",
+        "company": "HTL Wels",
+        "description": "Technical education focused on software development and IT systems."
+      }
+    }
+  },
+  "about": {
+    "title": "About Me",
+    "subtitle": "Passion for code and design",
+    "description": "With over 3 years of experience in web development, I combine technical expertise with creative design. I love turning complex problems into elegant solutions.",
+    "skills": "Skills",
+    "downloadCV": "Download CV"
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "Let's work together",
+    "description": "Have a project in mind? I'd love to hear from you.",
+    "name": "Name",
+    "email": "Email",
+    "message": "Message",
+    "send": "Send Message",
+    "success": "Message sent!",
+    "orReachOut": "Or reach out directly",
+    "namePlaceholder": "Your name",
+    "emailPlaceholder": "your@email.com",
+    "messagePlaceholder": "Your message..."
+  },
+  "footer": {
+    "rights": "All rights reserved",
+    "madeWith": "Made with love",
+    "backToTop": "Back to top"
+  },
+  "nav": {
+    "home": "Home",
+    "projects": "Projects",
+    "timeline": "Journey",
+    "about": "About",
+    "contact": "Contact"
+  },
+  "tech": {
+    "title": "Tech Stack",
+    "subtitle": "Technologies I work with daily"
+  },
+  "playground": {
+    "title": "Playground",
+    "subtitle": "Experiment with interactive code examples"
+  },
+  "settings": {
+    "accent": "Accent Color",
+    "mood": "Design Mode"
+  },
+  "skills": {
+    "title": "My Skills",
+    "subtitle": "Technologies & tools I work with"
+  }
+}
