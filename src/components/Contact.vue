@@ -10,13 +10,14 @@
         </p>
       </div>
 
-      <form action="mailto:lukas.hufnagl02@gmail.com" method="POST" enctype="text/plain" class="space-y-4 sm:space-y-6" v-motion :initial="{ opacity: 0, y: 40 }" :visibleOnce="{ opacity: 1, y: 0, transition: { delay: 200 } }">
+      <form ref="contactForm" @submit.prevent="handleSubmit" class="space-y-4 sm:space-y-6" v-motion :initial="{ opacity: 0, y: 40 }" :visibleOnce="{ opacity: 1, y: 0, transition: { delay: 200 } }">
         <div class="grid sm:grid-cols-2 gap-4 sm:gap-6">
           <div>
             <label for="name" class="block text-sm font-medium mb-2 text-gray-700 dark:text-gray-300">{{ t('contact.name') }}</label>
             <input 
               id="name"
-              name="Name"
+              v-model="form.name"
+              name="name"
               type="text" 
               required
               :placeholder="t('contact.name_placeholder')"
@@ -27,7 +28,8 @@
             <label for="email" class="block text-sm font-medium mb-2 text-gray-700 dark:text-gray-300">{{ t('contact.email') }}</label>
             <input 
               id="email"
-              name="Email"
+              v-model="form.email"
+              name="email"
               type="email" 
               required
               :placeholder="t('contact.email_placeholder')"
@@ -40,7 +42,8 @@
           <label for="message" class="block text-sm font-medium mb-2 text-gray-700 dark:text-gray-300">{{ t('contact.message') }}</label>
           <textarea 
             id="message"
-            name="Message"
+            v-model="form.message"
+            name="message"
             rows="5" 
             required
             :placeholder="t('contact.message_placeholder')"
@@ -50,12 +53,17 @@
 
         <button 
           type="submit"
-          class="group relative w-full py-3.5 sm:py-4 rounded-xl font-medium overflow-hidden transition-all duration-300 text-sm sm:text-base bg-black dark:bg-white text-white dark:text-black hover:shadow-xl hover:shadow-primary/20"
+          :disabled="submitted"
+          class="group relative w-full py-3.5 sm:py-4 rounded-xl font-medium overflow-hidden transition-all duration-300 text-sm sm:text-base"
+          :class="submitted ? 'bg-emerald text-white' : 'bg-black dark:bg-white text-white dark:text-black hover:shadow-xl hover:shadow-primary/20'"
         >
           <span class="relative z-10 flex items-center justify-center gap-2">
-            {{ t('contact.send') }}
+            <svg v-if="submitted" class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+            </svg>
+            {{ submitted ? t('contact.success') : t('contact.send') }}
           </span>
-          <div class="absolute inset-0 bg-gradient-to-r from-primary to-accent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+          <div v-if="!submitted" class="absolute inset-0 bg-gradient-to-r from-primary to-accent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
         </button>
       </form>
 
@@ -78,6 +86,45 @@
 </template>
 
 <script setup lang="ts">
+import { ref, reactive } from 'vue'
 import { useI18n } from 'vue-i18n'
+import emailjs from 'emailjs-com'
+import confetti from 'canvas-confetti'
+import { useAchievements } from '../composables/useAchievements'
+
 const { t } = useI18n()
+const { unlock } = useAchievements()
+const submitted = ref(false)
+
+const form = reactive({ name: '', email: '', message: '' })
+const contactForm = ref<HTMLFormElement | null>(null)
+
+const SERVICE_ID = 'service_j44kf5i'
+const TEMPLATE_ID = 'template_3vrepia'
+const PUBLIC_KEY = 'h5zRuoreelkZ23fS_'
+
+const handleSubmit = () => {
+  submitted.value = true
+  if (!contactForm.value) return
+  emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, contactForm.value, PUBLIC_KEY)
+    .then(() => {
+      unlock('contact_submit')
+      confetti({
+        particleCount: 100,
+        spread: 70,
+        origin: { y: 0.6 },
+        colors: ['#0070F3', '#7928CA', '#10B981']
+      })
+      setTimeout(() => {
+        submitted.value = false
+        form.name = ''
+        form.email = ''
+        form.message = ''
+      }, 3000)
+    })
+    .catch(() => {
+      submitted.value = false
+      // Optional: show error message
+    })
+}
 </script>
