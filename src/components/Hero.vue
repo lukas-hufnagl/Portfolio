@@ -1,5 +1,5 @@
 <template>
-  <section id="hero" class="min-h-screen flex items-center justify-center relative overflow-hidden bg-gray-50 dark:bg-[#0A0A0F] px-4 sm:px-6 lg:px-8">
+  <section id="hero" class="min-h-screen flex items-center justify-center relative overflow-hidden bg-gray-50 dark:bg-transparent px-4 sm:px-6 lg:px-8">
     <!-- Background blurs - hidden on mobile for performance -->
     <div class="absolute inset-0 overflow-hidden hidden sm:block">
       <div class="absolute top-1/4 -left-20 w-96 lg:w-[500px] h-96 lg:h-[500px] bg-primary/20 rounded-full blur-[150px]" />
