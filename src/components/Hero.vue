@@ -34,17 +34,6 @@
     </div>
 
     <div class="relative z-10 text-center w-full max-w-5xl mx-auto pt-16 sm:pt-0">
-      <!-- Status Badge -->
-      <div class="flex justify-center mb-6" v-motion :initial="{ opacity: 0, y: 20 }" :enter="{ opacity: 1, y: 0, transition: { delay: 100 } }">
-        <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-emerald/10 border border-emerald/20 text-emerald text-sm font-medium">
-          <span class="relative flex h-2 w-2">
-            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald opacity-75"></span>
-            <span class="relative inline-flex rounded-full h-2 w-2 bg-emerald"></span>
-          </span>
-          Available for work
-        </div>
-      </div>
-
       <p class="text-base sm:text-lg text-gray-600 dark:text-gray-400 mb-3 sm:mb-4" v-motion :initial="{ opacity: 0, y: 20 }" :enter="{ opacity: 1, y: 0, transition: { delay: 200 } }">
         {{ t('hero.greeting') }}
       </p>
